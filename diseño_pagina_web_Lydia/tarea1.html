@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Happy Paws</title>
+
+        <style>
+            body{
+                font-family: Arial;
+            }
+
+            #pie{
+                background-color:rgb(7, 43, 87);
+                display: flex;
+                font-family: Arial;
+                color: rgb(248, 248, 248);
+            }
+
+            #cabecera{
+                position: fixed;
+                width: 100%;
+                background-color: rgb(175, 207, 245);
+                display: flex; 
+                align-items: center; 
+                padding:10px;
+                font-size: 20px;
+            }
+
+            .logo img{
+                height: 110px;
+                width: auto; 
+            }
+            
+            .navegador ul li{
+                list-style-type: none;
+                display: inline;
+                justify-content: space-around;
+                margin: 15px;
+                cursor: pointer; /*esto hace que cuando el cursos pasa por encima se convierta en mano*/
+            }
+
+            .texto img{
+                height: 400px;
+                width: auto; 
+            }
+
+            #cuerpo{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .texto{
+                flex:1;
+                display: flex;
+                flex-direction:column ;
+                justify-content: center;
+                width: 500px;
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+
+            .imagen_tienda{
+                flex:1;
+                display: flex;
+                align-items: center;
+
+            }
+
+            .imagen_tienda img{
+                margin-right: 20px;
+                height: 400px;
+                width: auto; 
+            }
+
+            .informacion ul li{
+                list-style-type: none;
+            }
+
+            #parte_superior{
+                margin-top: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #parte_inferior{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 100px;
+                width: 90%;
+                padding: 20px;
+            }
+
+            .tarjeta{
+                border:2px solid rgb(175, 207, 245);
+                width: 400px;
+                height: 500px;
+                text-align: center;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .tarjeta:hover{
+                background-color: rgb(175, 207, 245);
+            }
+            
+            .tarjeta img{
+                width: 250px;
+            }
+
+            .encabezado{
+                margin-top: 110px;
+                margin-bottom: 10px;
+                text-align: center;
+                color: yellowgreen;
+            }
+
+            button {
+                background-color: #7cd6ec; /* Color inicial del botón */
+            }
+
+            button:hover{
+                background-color: azure;
+            }
+
+        </style>
+    </head>
+
+
+    <body>
+        <div id="contenedor">
+            <div id="cabecera">
+                <!--incluye el logo y el nombre de la tienda-->
+                <div class="logo">
+                    <img src="logo-animales.png">
+                </div>
+                <div class="navegador">
+                    <nav>
+                        <ul>
+                            <li>Inicio</li>
+                            <li>Servicios</a></li>
+                            <li>Alimentacion</li>
+                            <li>Accesorios</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+            <div id="cuerpo">
+                <div id="parte_superior">
+                    <div class="texto">
+                        <h1>Sobre nosotros</h1>
+                        <p>Bienvenido a Happy Paws, tu tienda de animales en Aranjuez, donde cuidamos a tus mascotas con cariño. 
+                            Ofrecemos una variedad de servicios, como peluquería para que tus amigos peludos luzcan y se sientan geniales. 
+                            Además, contamos con una amplia selección de alimentos y accesorios de calidad para satisfacer todas las necesidades de tus mascotas. 
+                            Desde juguetes divertidos hasta productos de cuidado, tenemos todo lo que necesitas para mantener a tus compañeros felices y saludables. 
+                            <br>¡Ven y descubre todo lo que tenemos para ofrecerte!
+                        </p>
+                    </div>
+
+                    <div class="imagen_tienda">
+                        <img src="exterior_tienda.webp">
+                    </div>
+                </div>
+
+                <h1 class="encabezado">PRODUCTOS DESTACADOS</h1>
+
+                <div id="parte_inferior" >
+                    <div id="producto1" class="tarjeta">
+                        <img src="pienso-gato.webp">
+                        <h2>Nature's Variety Selected Adult Sterilised Pollo para gatos</h2>
+                        <p>16.99€</p>
+                        <p>Pienso natural sin gluten para gatos adultos, elaborado con carne de pollo deshuesada de alta calidad como ingrediente principal</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+
+                    <div id="producto2" class="tarjeta">
+                        <img src="lata-perro.webp">
+                        <h2>Nath Adult Monoprotein Pavo lata para perros</h2>
+                        <p>2.99€</p>
+                        <p>Comida húmeda monoproteica con pavo como ingrediente principal. Es ideal para perros adultos con alergias o intolerancias alimenticias</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+
+                    <div id="producto3" class="tarjeta">
+                        <img src="comida-conejo.webp">
+                        <h2>Vitakraft Premium Menú Vital pienso para conejos</h2>
+                        <p>16.50€</p>
+                        <p>Snacks dentales Dentalife para perros de raza pequeña</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+
+                    <div id="producto4" class="tarjeta">
+                        <img src="snacks-perro.webp">
+                        <h2>Dentalife Snacks Dentales para perros de raza pequeña</h2>
+                        <p>8.99€</p>
+                        <p>Snacks dentales Dentalife para perros de raza pequeña</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+
+                    <div id="producto5" class="tarjeta">
+                        <img src="juguete-gato.jpg">
+                        <h2>The Cat Band Caña con Ratón</h2>
+                        <p><del>3.99€</del> 2.00€</p>
+                        <p>Caña con cuerda y un ratón en la punta</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+
+                    <div id="producto6" class="tarjeta">
+                        <img src="comida-pez.jpg">
+                        <h2>Tropical Supervit Granulos para peces</h2>
+                        <p>6.74€</p>
+                        <p>Con Tropical Supervit Granulat alimento para peces tus mascotas tendrán una vida sana y llena de energía para estar a tu lado</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <div id="pie">
+                <div class="informacion">
+                    <ul>
+                        <li>Dirección email: contacto@happypaws.com</li>
+                        <li><br>Teléfono: 666666666</li>
+                        <li><br>Ubicación: Aranjuez, Madrid</li>
+                        <li><br>Horario: </li>
+                            <ul>
+                                <li>De lunes a viernes: 10:00 a 14:00 y de 17:00 a 21:00</li>
+                                <li>Sábado: 10:00 a 14:00</li>
+                                <li>Domingo cerrado</li>
+                            </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

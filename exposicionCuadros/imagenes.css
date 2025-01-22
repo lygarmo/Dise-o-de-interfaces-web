@@ -1,0 +1,31 @@
+#titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(171, 247, 194);
+}
+
+#contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    /*muestro todo en una fila*/
+    justify-content: center;
+    background-color:rgb(215, 247, 225) ;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.cuadro{
+    flex-basis: calc(33.33% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cuadro img{
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+}
